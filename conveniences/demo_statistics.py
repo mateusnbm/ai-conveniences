@@ -7,7 +7,9 @@ import random
 import statistics
 import matplotlib.pyplot as plt
 
-# Calculate the mean, mode, median, standard deviation and variance.
+'''
+Calculate the mean, mode, median, standard deviation and variance.
+'''
 
 data = numpy.random.normal(1, 0.5, 10000)
 
@@ -29,7 +31,9 @@ plt.ylabel('count')
 plt.hist(data, 50)
 plt.show()
 
-# Calculate the covariance of uncorrelated data.
+'''
+Calculate the covariance of uncorrelated data.
+'''
 
 ages = numpy.random.normal(50.0, 10.0, 1000)
 income = numpy.random.normal(100000.0, 75000.0, 1000)
@@ -47,7 +51,9 @@ plt.ylabel('income')
 plt.scatter(ages, income)
 plt.show()
 
-# Calculate the covariance and correlation of data known to be correlated.
+'''
+Calculate the covariance and correlation of data known to be correlated.
+'''
 
 ages = numpy.random.normal(50.0, 10.0, 1000)
 income = [(n*1000+random.uniform(0, n/1000)*500000) for n in ages]

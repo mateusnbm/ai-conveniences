@@ -1,1 +1,1 @@
-# udemy-artificial-intelligence
+# ai-conveniences
